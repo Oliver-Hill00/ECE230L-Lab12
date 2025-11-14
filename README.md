@@ -18,8 +18,9 @@ In this lab, we learned how to make clock dividers from two types of counters.
 the MSB will stay low for half of the counting range, and high for the other half. 
 
 ### 2 - Why does the ring counter's output go to all 1s on the first clock cycle?
-- The ring counter outputs all 1s on the first clock to correct an invalid startup state as all 0's Forcing all 1s ensures the next clock produces a valid one-hot pattern, allowing the ring counter to operate properly.
+- The ring counter is counting down, so all 1's represent the value of 7 when the first clock cycle hits. 
 
 ### 3 - What width of ring counter would you use to get to an output of ~1KHz?
-- The width of the ring counter to use to get an output of ~1KHz would be......
+- The width of the ring counter to use to get an output of ~1KHz would be about 17 T-flipflops
+
 
